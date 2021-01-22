@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1FBD9B25BB583000D1EB07 /* preview_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E1FBD9925BB583000D1EB07 /* preview_1.png */; };
+		1E1FBD9C25BB583000D1EB07 /* preview_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E1FBD9A25BB583000D1EB07 /* preview_2.png */; };
 		1E743EB025B9D30A00E9F5CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E743EAF25B9D30A00E9F5CC /* AppDelegate.swift */; };
 		1E743EB225B9D30A00E9F5CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E743EB125B9D30A00E9F5CC /* SceneDelegate.swift */; };
 		1E743EB425B9D30A00E9F5CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E743EB325B9D30A00E9F5CC /* ContentView.swift */; };
 		1E743EB625B9D30C00E9F5CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E743EB525B9D30C00E9F5CC /* Assets.xcassets */; };
 		1E743EB925B9D30C00E9F5CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E743EB825B9D30C00E9F5CC /* Preview Assets.xcassets */; };
 		1E743EBC25B9D30C00E9F5CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E743EBA25B9D30C00E9F5CC /* LaunchScreen.storyboard */; };
+		1E743EC625B9D38900E9F5CC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1E743EC525B9D38900E9F5CC /* SDWebImageSwiftUI */; };
+		1E743ECC25BA1A6A00E9F5CC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E743ECB25BA1A6A00E9F5CC /* DataManager.swift */; };
+		1E743ECF25BA1ADF00E9F5CC /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E743ECE25BA1ADF00E9F5CC /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E1FBD9925BB583000D1EB07 /* preview_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview_1.png; sourceTree = "<group>"; };
+		1E1FBD9A25BB583000D1EB07 /* preview_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview_2.png; sourceTree = "<group>"; };
 		1E743EAC25B9D30A00E9F5CC /* Unsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E743EAF25B9D30A00E9F5CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E743EB125B9D30A00E9F5CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		1E743EB825B9D30C00E9F5CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E743EBB25B9D30C00E9F5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E743EBD25B9D30C00E9F5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E743ECB25BA1A6A00E9F5CC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1E743ECE25BA1ADF00E9F5CC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E743EC625B9D38900E9F5CC /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,8 @@
 		1E743EA325B9D30A00E9F5CC = {
 			isa = PBXGroup;
 			children = (
+				1E1FBD9925BB583000D1EB07 /* preview_1.png */,
+				1E1FBD9A25BB583000D1EB07 /* preview_2.png */,
 				1E743EAE25B9D30A00E9F5CC /* Unsplash */,
 				1E743EAD25B9D30A00E9F5CC /* Products */,
 			);
@@ -58,6 +70,7 @@
 			children = (
 				1E743EAF25B9D30A00E9F5CC /* AppDelegate.swift */,
 				1E743EB125B9D30A00E9F5CC /* SceneDelegate.swift */,
+				1E743ECA25BA1A2B00E9F5CC /* Model */,
 				1E743EB325B9D30A00E9F5CC /* ContentView.swift */,
 				1E743EB525B9D30C00E9F5CC /* Assets.xcassets */,
 				1E743EBA25B9D30C00E9F5CC /* LaunchScreen.storyboard */,
@@ -73,6 +86,15 @@
 				1E743EB825B9D30C00E9F5CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E743ECA25BA1A2B00E9F5CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E743ECB25BA1A6A00E9F5CC /* DataManager.swift */,
+				1E743ECE25BA1ADF00E9F5CC /* Photo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +113,9 @@
 			dependencies = (
 			);
 			name = Unsplash;
+			packageProductDependencies = (
+				1E743EC525B9D38900E9F5CC /* SDWebImageSwiftUI */,
+			);
 			productName = Unsplash;
 			productReference = 1E743EAC25B9D30A00E9F5CC /* Unsplash.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +143,9 @@
 				Base,
 			);
 			mainGroup = 1E743EA325B9D30A00E9F5CC;
+			packageReferences = (
+				1E743EC425B9D38900E9F5CC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 1E743EAD25B9D30A00E9F5CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,8 +160,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1FBD9C25BB583000D1EB07 /* preview_2.png in Resources */,
 				1E743EBC25B9D30C00E9F5CC /* LaunchScreen.storyboard in Resources */,
 				1E743EB925B9D30C00E9F5CC /* Preview Assets.xcassets in Resources */,
+				1E1FBD9B25BB583000D1EB07 /* preview_1.png in Resources */,
 				1E743EB625B9D30C00E9F5CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E743EB025B9D30A00E9F5CC /* AppDelegate.swift in Sources */,
+				1E743ECC25BA1A6A00E9F5CC /* DataManager.swift in Sources */,
 				1E743EB225B9D30A00E9F5CC /* SceneDelegate.swift in Sources */,
 				1E743EB425B9D30A00E9F5CC /* ContentView.swift in Sources */,
+				1E743ECF25BA1ADF00E9F5CC /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +323,7 @@
 				DEVELOPMENT_TEAM = 9G3FBMRURY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Unsplash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kirillov.dimitri.Unsplash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,6 +345,7 @@
 				DEVELOPMENT_TEAM = 9G3FBMRURY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Unsplash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kirillov.dimitri.Unsplash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -345,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E743EC425B9D38900E9F5CC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E743EC525B9D38900E9F5CC /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E743EC425B9D38900E9F5CC /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E743EA425B9D30A00E9F5CC /* Project object */;
 }
